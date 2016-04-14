@@ -21,6 +21,25 @@ module.exports = function configProtractor() {
     browserstack.capabilities['browserstack.key'] = process.env.BROWSERSTACK_KEY;
 
     return {
+        params: {
+            filesHost: 'http://104.196.28.106/download/e2e',
+            environment: "dev", //TODO: this should be a CLI parameter
+            hosts: {
+                dev: 'http://localhost:3000/plasmid_viewer',
+                test: 'http://104.196.28.106/plasmid_viewer',
+                stg: 'http://designer.genomecompiler.com:3000/plasmid_viewer',
+                prd: 'https://designer.genomecompiler.com/plasmid_iframe'
+            }
+        },
+
+        directConnect: true,
+
+        onPrepare: function() {
+            return browser.getCapabilities().then(function (cap) {
+                browser.browserName = cap.caps_.browserName;
+            });
+        },
+
         configList: [
             /* OS X / Chrome. */
             protractorUtils.mergeConfig({
