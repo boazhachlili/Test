@@ -14,7 +14,7 @@ module.exports = function configProtractor() {
     var browserstack = extend(true /* Deep copy. */, {}, protractorUtils.platform.browserstack);
 
     var protractorBaseConfig = {
-        specs: __dirname + '/../test/e2e/*.js'
+        specs: __dirname + '/../tests/e2e/main.spec.js'
     };
 
     browserstack.capabilities['browserstack.user'] = process.env.BROWSERSTACK_USER;
