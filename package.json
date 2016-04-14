@@ -1,36 +1,13 @@
 {
-    "name": "wt-protractor-boilerplate",
-    "version": "0.2.0",
-    "description": "Protractor browserstack cross-browser testing boilerplate",
-    "main": "index.js",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/wishtack/wt-protractor-boilerplate.git"
-    },
-    "scripts": {
-        "test": "jasmine-node test"
-    },
-    "keywords": [
-        "angularjs",
-        "cross-browser",
-        "e2e",
-        "gulp",
-        "protractor",
-        "test"
-    ],
-    "author": "Wishtack",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/wishtack/wt-protractor-boilerplate/issues"
-    },
-    "homepage": "https://github.com/wishtack/wt-protractor-boilerplate",
-    "dependencies": {
-        "dejavu": "0.4.8",
+  "name": "test",
+  "version": "1.0.0",
+  "dependencies": {
+       "dejavu": "0.4.8",
         "gulp": "3.9.0",
         "node.extend": "1.1.5",
         "require-dir": "0.3.0",
         "underscore": "1.8.3",
         "wt-protractor-runner": "0.2.1",
         "wt-protractor-utils": "1.0.0"
-    }
+  },
 }
