@@ -1,5 +1,5 @@
 'use strict'
-var webdriver = require('selenium-webdriver');
+// var webdriver = require('selenium-webdriver');
 
 var Utils = {
     getTranslateCoords: function(element) {
@@ -102,17 +102,17 @@ var Utils = {
     },
 
     getClipboardText: function() {
-        browser.executeScript(function () {
-            var element = document.createElement('input');
-            element.setAttribute('id', 'customInput');
-            //keep the input element visible, but positioned fixed to prevent interfering with other DOM elements
-            element.setAttribute('style', 'position: fixed;');
-            document.getElementsByTagName('body')[0].appendChild(element);
-            element.focus();
-        });
-        var newInput = $("#customInput");
-        newInput.sendKeys(webdriver.Key.chord(webdriver.Key.CONTROL, "v"));
-        return newInput.getAttribute('value');
+        // browser.executeScript(function () {
+        //     var element = document.createElement('input');
+        //     element.setAttribute('id', 'customInput');
+        //     //keep the input element visible, but positioned fixed to prevent interfering with other DOM elements
+        //     element.setAttribute('style', 'position: fixed;');
+        //     document.getElementsByTagName('body')[0].appendChild(element);
+        //     element.focus();
+        // });
+        // var newInput = $("#customInput");
+        // newInput.sendKeys(webdriver.Key.chord(webdriver.Key.CONTROL, "v"));
+        // return newInput.getAttribute('value');
     },
 
     pasteFromClipboard: function(isMouse) {
