@@ -2,12 +2,13 @@
   "name": "test",
   "version": "1.0.0",
   "dependencies": {
-       "dejavu": "0.4.8",
-        "gulp": "3.9.0",
-        "node.extend": "1.1.5",
-        "require-dir": "0.3.0",
-        "underscore": "1.8.3",
-        "wt-protractor-runner": "0.2.1",
-        "wt-protractor-utils": "1.0.0"
+    "dejavu": "0.4.8",
+    "gulp": "3.9.0",
+    "node.extend": "1.1.5",
+    "require-dir": "0.3.0",
+    "selenium-webdriver": "^2.53.1",
+    "underscore": "1.8.3",
+    "wt-protractor-runner": "0.2.1",
+    "wt-protractor-utils": "1.0.0"
   }
 }
