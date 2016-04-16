@@ -1,7 +1,19 @@
 language: node_js
 node_js:
   - "5"
-before_script:
-  - npm install -g gulp
+
+required_services:
+  - docker
+
+# before_install:
+#   # use docker to spin up our app and test it on localhost
+#   docker build -t <REPO>/<IMAGE> .
+#   docker run -d -p<PORT>:<PORT>
+#   docker ps -a
+
+
+# install our test tools:
+# before_script:
+  # - npm install -g gulp
 
 script: gulp test-e2e
