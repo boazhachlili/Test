@@ -1,6 +1,6 @@
 'use strict';
 var PlasmidViewer = require('./page_objects/plasmid_viewer.js');
-console.log('foooooo');
+
 // keep our globals namespaced:
 // GLOBAL.gc = {};
 
