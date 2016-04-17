@@ -13,7 +13,7 @@ node_js:
 
 
 # install our test tools:
-before_script:
-  - npm install -g gulp
+# before_script:
+  # - npm install -g gulp
 
 script: gulp test-e2e
