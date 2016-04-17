@@ -8,10 +8,11 @@ var SequenceView = require('./sequence_view.js'),
 var PlasmidViewer = function(env) {
     try {
         var utils = GLOBAL.gc.utils,
-            hosts = browser.params.hosts,
-            filesHost = browser.params.filesHost;
+            config = GLOBAL.gc.config,
+            hosts = config.hosts,
+            filesHost = config.filesHost;
 
-        if(typeof(env) !== 'string' || browser.params.hosts[env] == undefined) {
+        if(typeof(env) !== 'string' || config.hosts[env] == undefined) {
             throw 'invalid env parameter (' + env + ')';
         }
 
