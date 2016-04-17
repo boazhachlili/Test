@@ -1,19 +1,9 @@
 language: node_js
 # node_js:
   # - "4"
-# the following is required for compiling node:
-# see https://docs.travis-ci.com/user/languages/javascript-with-nodejs#Node.js-v4-(or-io.js-v3)-compiler-requirements
-# env:
-#   - CXX=g++-4.8
-# addons:
-#   apt:
-#     sources:
-#       - ubuntu-toolchain-r-test
-#     packages:
-#       - g++-4.8
 
 # required_services:
-#   - docker
+  # - docker
 
 # before_install:
 #   # use docker to spin up our app and test it on localhost
@@ -23,7 +13,7 @@ language: node_js
 
 
 # install our test tools:
-# before_script:
-  # - npm install -g gulp
+before_script:
+  - npm install -g gulp
 
 script: gulp test-e2e
